@@ -19,14 +19,21 @@ a {
 }
 
 a:before {
-	content: '';
+	content: 'YEAH!';
+	color: white;
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: #351435;
-	z-index: -1;
+	background-color: #F44336;
 	transform: translateY(-100%);
 	transition: all 1s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a:hover:before {
+	transform: translateY(0);
 }
